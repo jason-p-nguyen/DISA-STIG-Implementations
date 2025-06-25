@@ -9,7 +9,9 @@
 .NOTES
     Author          : Jason Nguyen
     GitHub          : github.com/jason-p-nguyen
-    Date Created    : 2025-06-24
+    Date Created    : 2025-06-23
+    Last Modified   : 2025-06-24
+    Version         : 2.0
     STIG-ID         : WN10-AC-000010
 
 .TESTED ON
