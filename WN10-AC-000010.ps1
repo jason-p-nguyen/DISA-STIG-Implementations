@@ -12,6 +12,8 @@
     Date Created    : 2025-06-23
     Last Modified   : 2025-06-24
     Version         : 2.0
+    CVEs            : N/A
+    Plugin IDs      : N/A
     STIG-ID         : WN10-AC-000010
 
 .TESTED ON
