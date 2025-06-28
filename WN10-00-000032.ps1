@@ -13,6 +13,8 @@
     Date Created    : 2025-06-28
     Last Modified   : 2025-06-28
     Version         : 1.0
+    CVEs            : N/A
+    Plugin IDs      : N/A
     STIG-ID         : WN10-00-000032
 
 .TESTED ON
