@@ -58,15 +58,15 @@ This document outlines the exact step-by-step process I followed to manually and
 * Reversed the setting to simulate noncompliance:
 
   * Re-enabled **Windows PowerShell 2.0** in Windows Features
+  ![Re-enabled PowerShell 2.0](screenshots/8_re-enabled_Powershell_2.0.png)
+
   * Applied and completed change
+  ![Apply changes](screenshots/9_Apply_changes.png)
 
-* 📸 Screenshot: Windows PowerShell 2.0 turned back on
-  ![Re-enabled PowerShell 2.0](screenshots/5_Revert_Enable_PowerShell2.png)
-
-* Restarted VM and ran `gpupdate /force`
+* Restarted VM
 
 * 📸 Screenshot: Scan result after revert — **Failed**
-  ![Scan Failed After Revert](screenshots/6_Revert_Failed_Scan_Results.png)
+  ![Scan Failed After Revert](screenshots/10_Revert_fix_scan_results.png)
 
 ---
 
