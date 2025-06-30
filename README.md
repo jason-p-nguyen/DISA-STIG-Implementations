@@ -23,6 +23,8 @@ Each implementation is based on the official DISA STIG benchmarks and tested in 
 
 ## ✅ Full STIG Implementation Progress
 
+**All STIG Implementation Powershell scripts can be found in this repo**
+
 | STIG ID           | Completion Status                                   | Description                                                                 |
 |-------------------|-----------------------------------------------------|-----------------------------------------------------------------------------|
 | WN10-AU-000500    | ✅ Done                                              | The Application event log size must be configured to 32768 KB or greater.   |
