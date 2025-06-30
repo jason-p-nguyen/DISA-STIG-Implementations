@@ -31,7 +31,7 @@ This document outlines the exact step-by-step process I followed to manually and
 * Researched manual fix using:
 
   * STIG documentation via [STIGAVIEW WN10-SO-000205](https://stigaview.com/products/win10/v3r1/WN10-SO-000205/)
-  ![Initial Scan Results](screenshots/2_Stig-a-view.png.png)
+![Initial Scan Results](screenshots/2_Stig-a-view.png)
   
   * Registry path:
 
