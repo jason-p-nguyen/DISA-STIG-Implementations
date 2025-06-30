@@ -21,7 +21,7 @@ This document outlines the exact step-by-step process I followed to manually and
   This setting strengthens authentication and protects against certain replay and credential forwarding attacks.
 
 * 📸 Screenshot: Initial failed scan result
-![Initial Scan Results](STIG_Remediation_Process_WN10-SO-000205/screenshots/1_Initial_Scan_Results.png)
+![Initial Scan Results](screenshots/1_Initial_Scan_Results.png)
 
 ---
 
