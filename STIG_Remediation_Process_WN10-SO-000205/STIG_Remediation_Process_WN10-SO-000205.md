@@ -66,7 +66,7 @@ This document outlines the exact step-by-step process I followed to manually and
 
 ## ⚡ PowerShell Remediation
 
-* Developed [PowerShell script](WN10-SO-000205.ps1) to enforce registry setting:
+* Developed [PowerShell script](WN10-SO-000205.ps1) to enforce registry setting via ChatGPT:
 
   ```powershell
   # .SYNOPSIS
