@@ -2,6 +2,7 @@
 
 
 **STIG ID:** WN10-SO-000205
+
 **Status:** ✅ Completed
 
 ## 🧾 Personal Implementation Notes
@@ -30,6 +31,8 @@ This document outlines the exact step-by-step process I followed to manually and
 * Researched manual fix using:
 
   * STIG documentation via [STIGAVIEW WN10-SO-000205](https://stigaview.com/products/win10/v3r1/WN10-SO-000205/)
+  ![Initial Scan Results](screenshots/2_Stig-a-view.png.png)
+  
   * Registry path:
 
     ```
@@ -42,7 +45,10 @@ This document outlines the exact step-by-step process I followed to manually and
 * Restarted VM
 * Ran `gpupdate /force`
 * 📸 Screenshot: Registry fix applied
+![Initial Scan Results](screenshots/3_Manual_Registry_Fix_applied.png)
+
 * 📸 Screenshot: Scan results after manual remediation — **Passed**
+![Initial Scan Results](screenshots/4_Manual_fix_scan_results.png)
 
 > 📝 Noticed that after remediation, parts of the scan report appeared in Japanese. UI language was already set to English. Not resolved, but noted for case documentation.
 
@@ -54,8 +60,10 @@ This document outlines the exact step-by-step process I followed to manually and
 * Restarted VM
 * Ran `gpupdate /force`
 * 📸 Screenshot: Fix deletion
-* 📸 Screenshot: Scan results after reverting — **Failed**
+![Initial Scan Results](screenshots/5_Revert_Manual_Fix.png)
 
+* 📸 Screenshot: Scan results after reverting — **Failed**
+![Initial Scan Results](screenshots/6_Reverted_Manual_Fix_scan_results.png)
 ---
 
 ## ⚡ PowerShell Remediation
@@ -89,13 +97,14 @@ This document outlines the exact step-by-step process I followed to manually and
 * Ran the script on VM
 
 * 📸 Screenshot: Script execution
+![Initial Scan Results](screenshots/7_Powershell_script_execution.png)
 
 * Restarted VM
 
 * Ran `gpupdate /force`
 
 * 📸 Screenshot: Scan results after PowerShell fix — **Passed**
-
+![Initial Scan Results](screenshots/8_Powershell_fix_scan_results.png)
 ---
 
 ## 📦 Documentation for GitHub
