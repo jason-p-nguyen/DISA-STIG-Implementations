@@ -30,7 +30,7 @@ This document outlines the exact step-by-step process I followed to manually and
 
 * Researched manual fix using:
 
-  * STIG documentation via [STIGAVIEW WN10-SO-000205](https://stigaview.com/products/win10/v3r1/WN10-SO-000205/)
+  * STIG documentation via [STIG-A-VIEW WN10-SO-000205](https://stigaview.com/products/win10/v3r1/WN10-SO-000205/)
 ![Initial Scan Results](screenshots/2_Stig-a-view.png)
   
   * Registry path:
@@ -42,7 +42,6 @@ This document outlines the exact step-by-step process I followed to manually and
     Value: 5
     ```
 * Edited the registry manually to set `LmCompatibilityLevel = 5`
-* Restarted VM
 * Ran `gpupdate /force`
 * 📸 Screenshot: Registry fix applied
 ![Initial Scan Results](screenshots/3_Manual_Registry_Fix_applied.png)
@@ -57,7 +56,6 @@ This document outlines the exact step-by-step process I followed to manually and
 ## 🔁 Revert & Recheck
 
 * Deleted the registry key to simulate a noncompliant state
-* Restarted VM
 * Ran `gpupdate /force`
 * 📸 Screenshot: Fix deletion
 ![Initial Scan Results](screenshots/5_Revert_Manual_Fix.png)
@@ -105,8 +103,6 @@ This document outlines the exact step-by-step process I followed to manually and
 
 * 📸 Screenshot: Script execution
 ![Initial Scan Results](screenshots/7_Powershell_script_execution.png)
-
-* Restarted VM
 
 * Ran `gpupdate /force`
 
