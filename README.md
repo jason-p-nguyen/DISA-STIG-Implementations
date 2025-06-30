@@ -28,7 +28,7 @@ Each implementation is based on the official DISA STIG benchmarks and tested in 
 | STIG ID           | Completion Status                                   | Description                                                                 |
 |-------------------|-----------------------------------------------------|-----------------------------------------------------------------------------|
 | WN10-AU-000500    | ✅ Done                                              | The Application event log size must be configured to 32768 KB or greater.   |
-| WN10-AU-000035    | ❌ Abandoned — fix not persistent                   | Audit Account Management - User Account Management failures.               |
+| WN10-AU-000035    | ❌ Abandoned — fix was not persistent                   | Audit Account Management - User Account Management failures.               |
 | WN10-SO-000010    | ✅ Done                                              | The built-in guest account must be disabled.                                |
 | WN10-SO-000015    | ✅ Done                                              | Local accounts with blank passwords must be restricted.                     |
 | WN10-AC-000005    | ✅ Done                                              | Account lockout duration must be configured to 15 minutes or greater.       |
@@ -37,7 +37,7 @@ Each implementation is based on the official DISA STIG benchmarks and tested in 
 | WN10-AC-000020    | ✅ Done                                              | Password history must be configured to 24 passwords remembered.             |
 | WN10-AC-000030    | ✅ Done                                              | Minimum password age must be at least 1 day.                                |
 | WN10-AC-000035    | ✅ Done                                              | Passwords must be at least 14 characters.                                   |
-| WN10-AC-000040    | ❌ Abandoned — would require unnecessary LGPO setup | Microsoft password complexity filter must be enabled.                       |
+| WN10-AC-000040    | ❌ Abandoned — required unnecessary LGPO setup | Microsoft password complexity filter must be enabled.                       |
 | WN10-AU-000505    | ✅ Done                                              | Security event log size must be 1024000 KB or greater.                      |
 | WN10-00-000032    | ✅ Done                                              | BitLocker PIN must be 6 digits or more for pre-boot authentication.         |
 | WN10-AU-000510    | ✅ Done                                              | System event log size must be 32768 KB or greater.                          |
