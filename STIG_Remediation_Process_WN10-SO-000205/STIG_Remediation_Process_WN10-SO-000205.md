@@ -72,16 +72,16 @@ This document outlines the exact step-by-step process I followed to manually and
 
   ```powershell
   # .SYNOPSIS
-  #  Sets the LmCompatibilityLevel to 5 to enforce the use of NTLMv2 authentication.
+    # Sets the LmCompatibilityLevel to 5 to enforce the use of NTLMv2 authentication.
   
   # .DESCRIPTION
-  #  Implements STIG control WN10-SO-000205 by configuring the following registry key:
-  #  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel = 5
+    # Implements STIG control WN10-SO-000205 by configuring the following registry key:
+    # HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel = 5
   
-  #  Level 5 sends NTLMv2 responses only and refuses LM and NTLM authentication, which increases security.
-  
+    # Level 5 sends NTLMv2 responses only and refuses LM and NTLM authentication, which increases security.
+
   # .USAGE
-  #  Run this script in an elevated PowerShell session (Run as Administrator)
+    # Run this script in an elevated PowerShell session (Run as Administrator)
   
   # ---------------------------------------------
 
