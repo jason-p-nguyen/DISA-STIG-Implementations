@@ -58,7 +58,7 @@ This document outlines the exact step-by-step process I followed to manually and
 * Reversed the setting to simulate noncompliance:
 
   * Re-enabled **Windows PowerShell 2.0** in Windows Features
-  ![Re-enabled PowerShell 2.0](screenshots/8_re-enabled_Powershell_2.0.png)
+  ![Re-enabled PowerShell 2.0](screenshots/8_Re-enabled_Powershell_2.0.png)
 
   * Applied and completed change
   ![Apply changes](screenshots/9_Apply_changes.png)
