@@ -72,12 +72,16 @@ This document outlines the exact step-by-step process I followed to manually and
 
   ```powershell
   # .SYNOPSIS
-  #   Remediates STIG ID WN10-SO-000205 by enforcing NTLMv2 authentication
-  # .NOTES
-  #   STIG: WN10-SO-000205
-  #   Description: LmCompatibilityLevel must be set to 5
+  #  Sets the LmCompatibilityLevel to 5 to enforce the use of NTLMv2 authentication.
+  
+  # .DESCRIPTION
+  #  Implements STIG control WN10-SO-000205 by configuring the following registry key:
+  #  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel = 5
+  #  Level 5 sends NTLMv2 responses only and refuses LM and NTLM authentication, which increases security.
+  
   # .USAGE
-  #   Run as administrator
+  #  Run this script in an elevated PowerShell session (Run as Administrator)
+  
   # ---------------------------------------------
 
   $regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa"
