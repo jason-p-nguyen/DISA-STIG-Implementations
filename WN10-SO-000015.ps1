@@ -1,66 +1,35 @@
 <#
 .SYNOPSIS
-    Ensures that the "LimitBlankPasswordUse" registry value is set to 1 to restrict blank password use as required by STIG WN10-SO-000015.
+    Sets "LimitBlankPasswordUse" to 1 to restrict blank password use (STIG: WN10-SO-000015).
 
 .DESCRIPTION
-    This script verifies and configures the following registry setting:
-
-    Hive: HKEY_LOCAL_MACHINE
-    Path: SYSTEM\CurrentControlSet\Control\Lsa\
-    Value Name: LimitBlankPasswordUse
-    Value Type: REG_DWORD
-    Value Data: 1
+    Configures the registry to enforce a security policy that disallows network logons using blank passwords.
 
 .NOTES
     Author          : Jason Nguyen
     GitHub          : github.com/jason-p-nguyen
-    Date Created    : 2025-06-23
-    Last Modified   : 2025-06-23
-    Version         : 1.0
-    CVEs            : N/A
-    Plugin IDs      : N/A
+    Date Created    : 2025-06-24
     STIG-ID         : WN10-SO-000015
 
 .TESTED ON
-    Date(s) Tested  : 2025-06-23
-    Tested By       : Jason Nguyen
-    Systems Tested  : Microsoft Windows [Version 10.0.19045.2965]
+    Date(s) Tested  : 2025-06-24
+    Systems Tested  : Microsoft Windows 10 [Version 10.0.19045.2965]
     PowerShell Ver. : 5.1.19041.2965
 
 .USAGE
     Run this script in an elevated PowerShell session (Run as Administrator)
 #>
 
-$regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa"
-$valueName = "LimitBlankPasswordUse"
+$regPath     = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa"
+$valueName   = "LimitBlankPasswordUse"
 $desiredValue = 1
 
-try {
-    # Check if the registry key exists
-    if (-not (Test-Path $regPath)) {
-        Write-Host "Registry path does not exist. Creating path: $regPath"
-        New-Item -Path $regPath -Force | Out-Null
-    }
+# Ensure the path exists
+New-Item -Path $regPath -Force -ErrorAction SilentlyContinue | Out-Null
 
-    # Read current value if it exists
-    $currentValue = $null
-    if (Get-ItemProperty -Path $regPath -Name $valueName -ErrorAction SilentlyContinue) {
-        $currentValue = (Get-ItemProperty -Path $regPath -Name $valueName).$valueName
-    }
+# Set the value
+Set-ItemProperty -Path $regPath -Name $valueName -Value $desiredValue -Type DWord
 
-    if ($currentValue -eq $desiredValue) {
-        Write-Host "[OK] Registry value '$valueName' is correctly set to $desiredValue." -ForegroundColor Green
-    } else {
-        Write-Warning "[FINDING] Registry value '$valueName' is not set to $desiredValue or does not exist."
-        Write-Host "Setting registry value '$valueName' to $desiredValue..."
-        Set-ItemProperty -Path $regPath -Name $valueName -Value $desiredValue -Type DWord
-        Write-Host "[FIXED] Registry value '$valueName' set to $desiredValue." -ForegroundColor Green
-    }
-
-    # Confirm the final value
-    $finalValue = (Get-ItemProperty -Path $regPath -Name $valueName).$valueName
-    Write-Host "`n[RESULT] Final value of '$valueName' is: $finalValue"
-
-} catch {
-    Write-Error "An error occurred: $_"
-}
+# Output result
+$finalValue = (Get-ItemProperty -Path $regPath -Name $valueName).$valueName
+Write-Host "[RESULT] '$valueName' is now set to: $finalValue (Expected: $desiredValue)" -ForegroundColor Green
