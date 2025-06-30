@@ -23,7 +23,7 @@ Each implementation is based on the official DISA STIG benchmarks and tested in 
 
 ## ✅ Full STIG Implementation Progress
 
-**All STIG Implementation Powershell scripts can be found in this repo**
+**All STIG Implementation Powershell scripts can be found in [this repo](https://github.com/jason-p-nguyen/DISA-STIG-Implementations/tree/main)**
 
 | STIG ID           | Completion Status                                   | Description                                                                 |
 |-------------------|-----------------------------------------------------|-----------------------------------------------------------------------------|
