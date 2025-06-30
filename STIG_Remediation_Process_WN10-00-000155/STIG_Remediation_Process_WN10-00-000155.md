@@ -104,15 +104,15 @@ try {
 ```
 
 * 📸 Screenshot: PowerShell script executed
-  ![Script Execution](screenshots/7_PS_Script_Execution.png)
+  ![Script Execution](screenshots/11_Powershell_execution.png)
 
 * 📸 Screenshot: Manual check — PowerShell 2.0 turned off in Windows Features
-  ![Feature Confirmation](screenshots/8_Feature_Confirmed_Off.png)
+  ![Feature Confirmation](screenshots/12_Manual_check.png)
 
-* Restarted VM and ran `gpupdate /force`
+* Restarted VM
 
 * 📸 Screenshot: Scan result after PowerShell remediation — **Passed**
-  ![Scan Passed](screenshots/9_PowerShell_Fix_Scan_Result.png)
+  ![Scan Passed](screenshots/13_Powershell_fix_scan_results.png)
 
 ---
 
