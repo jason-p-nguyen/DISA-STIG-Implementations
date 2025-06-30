@@ -21,7 +21,7 @@ This document outlines the exact step-by-step process I followed to manually and
   PowerShell 2.0 is outdated and lacks modern security features. It should be disabled to reduce attack surface.
 
 * 📸 Screenshot: Initial failed scan
-  ![Initial Scan Results](screenshots/1_Initial_Scan_WN10-00-000155.png)
+  ![Initial Scan Results](screenshots/1_Initial_scan_results.png)
 
 ---
 
@@ -30,7 +30,7 @@ This document outlines the exact step-by-step process I followed to manually and
 * Researched manual fix using:
 
   * [STIG-A-VIEW WN10-00-000155](https://stigaview.com/products/win10/v3r1/WN10-00-000155/)
-    ![Stig-a-view](screenshots/2_Stig-a-view.png)
+    ![Stig-a-view](screenshots/2_STIG-A-VIEW.png)
 
 * Manual Fix Steps:
 
