@@ -34,19 +34,22 @@ This document outlines the exact step-by-step process I followed to manually and
 
 * Manual Fix Steps:
 
-  1. Open **Windows Features** (optionalfeatures.exe)
+  1. Open **Windows Features**
+  ![Access Windows Feature](screenshots/3_Access_Windows_Features.png)
+
   2. Locate **Windows PowerShell 2.0**
+  ![Locate Windows Powershell 2.0](screenshots/4_Windows_Features.png)
+  
   3. Uncheck the feature (turn off)
+  ![Uncheck Windows Powershell 2.0](screenshots/5_Uncheck_Powershell_2.0.png) 
+     
   4. Click **OK** and allow Windows to apply changes
-  5. Restart the system if prompted
-
-* 📸 Screenshot: Windows PowerShell 2.0 turned off
-  ![Disable PowerShell 2.0](screenshots/3_Disabled_PowerShell2_Feature.png)
-
-* Restarted VM and ran `gpupdate /force`
+  ![Apply changes](screenshots/6_Apply_changes.png) 
+  
+  5. Restarted the system 
 
 * 📸 Screenshot: Scan results after manual remediation — **Passed**
-  ![Manual Fix Scan Passed](screenshots/4_Manual_Fix_Scan_Results.png)
+  ![Manual Fix Scan Passed](screenshots/7_Manual_Fix_Scan_Results.png)
 
 ---
 
