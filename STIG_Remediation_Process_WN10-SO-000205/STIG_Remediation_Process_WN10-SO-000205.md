@@ -68,7 +68,7 @@ This document outlines the exact step-by-step process I followed to manually and
 
 ## ⚡ PowerShell Remediation
 
-* Developed PowerShell script to enforce registry setting:
+* Developed [PowerShell script](WN10-SO-000205.ps1) to enforce registry setting:
 
   ```powershell
   # .SYNOPSIS
@@ -98,6 +98,8 @@ This document outlines the exact step-by-step process I followed to manually and
   Set-ItemProperty -Path $regPath -Name $name -Value $value -Type DWord
   Write-Output "STIG WN10-SO-000205 remediated: LmCompatibilityLevel set to 5"
   ```
+  
+* See completed Powershell Script here: [WN10-SO-000205.ps1](WN10-SO-000205.ps1)
 
 * Ran the script on VM
 
