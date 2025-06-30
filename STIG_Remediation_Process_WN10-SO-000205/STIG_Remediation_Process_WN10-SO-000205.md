@@ -77,6 +77,7 @@ This document outlines the exact step-by-step process I followed to manually and
   # .DESCRIPTION
   #  Implements STIG control WN10-SO-000205 by configuring the following registry key:
   #  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel = 5
+  
   #  Level 5 sends NTLMv2 responses only and refuses LM and NTLM authentication, which increases security.
   
   # .USAGE
