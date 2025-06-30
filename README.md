@@ -17,7 +17,7 @@ Each implementation is based on the official DISA STIG benchmarks and tested in 
 | STIG ID              | Description                                               | Link                                                             |
 |----------------------|-----------------------------------------------------------|------------------------------------------------------------------|
 | `WN10-SO-000205`     | Enforce NTLMv2 authentication via registry                | [View Remediation Process](STIG_Remediation_Process_WN10-SO-000205/STIG_Remediation_Process_WN10-SO-000205.md) |
-| `WN10-00-000155`     | Disable Windows PowerShell 2.0 (legacy version)           | [View Remediation Process](STIG_Remediation_Process_WN10-SO-000205/STIG_Remediation_Process_WN10-00-000155.md) |
+| `WN10-00-000155`     | Disable Windows PowerShell 2.0 (legacy version)           | [View Remediation Process](STIG_Remediation_Process_WN10-00-000155/STIG_Remediation_Process_WN10-00-000155.md) |
 
 ---
 
